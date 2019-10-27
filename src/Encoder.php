@@ -1,11 +1,11 @@
 <?php
 
-namespace al\helper;
+namespace AlHepler;
 
 /**
  * AL加密类(对称的字符串加密)
  * Class Encoder
- * @package al\helper
+ * @package AlHepler
  */
 class Encoder
 {
