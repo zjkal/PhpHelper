@@ -18,6 +18,8 @@ class Encoder
      */
     public static function encode($data, $key = 'ykmaiz')
     {
+        $data = strval($data);
+
         $a = array('l', 'i', 'a', 'n', 'g', 'x', 'f', 'e');
         $key = md5($key);
         $x = 0;
@@ -25,7 +27,6 @@ class Encoder
         $l = strlen($key);
         $char = '';
         $str = '';
-        $ret = '';
         for ($i = 0; $i < $len; $i++) {
             if ($x == $l) {
                 $x = 0;
@@ -50,6 +51,8 @@ class Encoder
      */
     public static function decode($data, $key = 'ykmaiz')
     {
+        $data = strval($data);
+
         $a = array('l', 'i', 'a', 'n', 'g', 'x', 'f', 'e');
 
         $str2 = substr(str_replace('-', '+', str_replace('_', '/', $data)), 1);
