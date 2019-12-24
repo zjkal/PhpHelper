@@ -19,6 +19,7 @@ class Encoder
     public static function encode($data, $key = 'ykmaiz')
     {
         $data = strval($data);
+        $key = strval($key);
 
         $a = array('l', 'i', 'a', 'n', 'g', 'x', 'f', 'e');
         $key = md5($key);
