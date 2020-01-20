@@ -2,5 +2,5 @@
 a common tool class for php development
 
 ```
-composer require gmars/tp5-rbac
+composer require zjkal/phphelper
 ```
